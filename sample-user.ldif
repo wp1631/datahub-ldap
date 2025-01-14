@@ -1,0 +1,38 @@
+# Define user John Doe (member of G-Access)
+dn: cn=John Doe,ou=datacenter,ou=itdep,dc=example,dc=com
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: John Doe
+sn: Doe
+givenName: John
+displayName: John Doe
+mail: john.doe@cmh.org
+sAMAccountName: johndoe
+userPassword: Password123
+
+# Define user Jane Smith (member of G-Discovery)
+dn: cn=Jane Smith,ou=datacenter,ou=itdep,dc=example,dc=com
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Jane Smith
+sn: Smith
+givenName: Jane
+displayName: Jane Smith
+mail: jane.smith@cmh.org
+sAMAccountName: janesmith
+userPassword: Password123
+
+# Define user Alice Brown (member of G-Analytic)
+dn: cn=Alice Brown,ou=datacenter,ou=itdep,dc=example,dc=com
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Alice Brown
+sn: Brown
+givenName: Alice
+displayName: Alice Brown
+mail: alice.brown@cmh.org
+sAMAccountName: alicebrown
+userPassword: Password123
