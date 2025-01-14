@@ -1,0 +1,29 @@
+dn: cn=AD-Schema,cn=schema,cn=config
+objectClass: olcSchemaConfig
+cn: AD-Schema
+olcAttributeTypes: ( 1.2.840.113556.1.4.221 
+  NAME 'sAMAccountName' 
+  DESC 'Security Account Manager account name'
+  EQUALITY caseIgnoreMatch 
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+  SINGLE-VALUE )
+olcAttributeTypes: ( 1.2.840.113556.1.4.230 
+  NAME 'userPrincipalName' 
+  DESC 'User principal name' 
+  EQUALITY caseIgnoreMatch 
+  SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 
+  SINGLE-VALUE )
+olcObjectClasses: ( 1.2.840.113556.1.5.9 
+  NAME 'user' 
+  DESC 'Active Directory user'
+  SUP inetOrgPerson 
+  STRUCTURAL 
+  MUST ( cn $ sn $ sAMAccountName ) 
+  MAY ( userPassword $ mail $ userPrincipalName ) )
+olcObjectClasses: ( 1.2.840.113556.1.5.8 
+  NAME 'group' 
+  DESC 'Active Directory group'
+  SUP top 
+  STRUCTURAL 
+  MUST ( cn ) 
+  MAY ( sAMAccountName $ member $ description ) )
