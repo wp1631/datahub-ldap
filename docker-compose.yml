@@ -71,6 +71,7 @@ services:
     volumes:
     - ${HOME}/.datahub/plugins:/etc/datahub/plugins
     - ./customization/jaas.conf:/datahub-frontend/conf/jaas.conf
+    - ./customization/application.conf:/datahub-frontend/conf/application.conf
   datahub-gms:
     depends_on:
       datahub-upgrade:
