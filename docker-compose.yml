@@ -1,3 +1,4 @@
+version: '3.9'
 networks:
   default:
     name: datahub_network
@@ -112,6 +113,8 @@ services:
     - ${DATAHUB_MAPPED_GMS_PORT:-8080}:8080
     volumes:
     - ${HOME}/.datahub/plugins:/etc/datahub/plugins
+    extra_hosts:
+    - "host.docker.internal:172.17.0.1"
   datahub-upgrade:
     command:
     - -u
@@ -266,8 +269,6 @@ services:
     volumes:
     - zkdata:/var/lib/zookeeper/data
     - zklogs:/var/lib/zookeeper/log
-  extra_hosts:
-    - "host.docker.internal:172.17.0.1"
 volumes:
   broker: null
   esdata: null
