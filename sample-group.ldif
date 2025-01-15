@@ -1,3 +1,4 @@
+# This file is example for user group for ldap user
 
 # Define group T-Access
 dn: cn=T-Access,ou=datacenter,ou=itdep,dc=example,dc=com

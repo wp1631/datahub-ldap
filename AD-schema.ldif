@@ -1,3 +1,6 @@
+# This file was used to generate the Window's Active Directory Structure
+# Supposed to be used in ldap server to extend the schema
+
 dn: cn=AD-Schema,cn=schema,cn=config
 objectClass: olcSchemaConfig
 cn: AD-Schema

@@ -1,3 +1,5 @@
+# This file is used to enable overlay attribute `memberOf`
+
 dn: olcOverlay=memberof,olcDatabase={1}mdb,cn=config
 objectClass: olcOverlayConfig
 objectClass: olcMemberOf

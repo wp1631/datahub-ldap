@@ -1,3 +1,5 @@
+# This file was used to create a set of example organizationalUnit for ldap integratiion test
+
 # Define the top-level organizational unit: itdep
 dn: ou=itdep,dc=example,dc=com
 objectClass: organizationalUnit

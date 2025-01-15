@@ -1,3 +1,5 @@
+# This file was used to create a set of example users that will be authenticated in AD service
+
 # Define user John Doe (member of G-Access)
 dn: cn=John Doe,ou=datacenter,ou=itdep,dc=example,dc=com
 objectClass: person

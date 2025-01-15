@@ -1,3 +1,5 @@
+# This file was used to enable overlay attribute (memberOf) in AD system
+
 dn: cn=module{0},cn=config
 changetype: modify
 add: olcModuleLoad
