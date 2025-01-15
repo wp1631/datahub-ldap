@@ -9,7 +9,7 @@ cn: John Doe
 sn: Doe
 givenName: John
 displayName: John Doe
-mail: john.doe@cmh.org
+mail: john.doe@example.com
 sAMAccountName: johndoe
 userPassword: Password123
 
@@ -22,7 +22,7 @@ cn: Jane Smith
 sn: Smith
 givenName: Jane
 displayName: Jane Smith
-mail: jane.smith@cmh.org
+mail: jane.smith@example.com
 sAMAccountName: janesmith
 userPassword: Password123
 
@@ -35,6 +35,6 @@ cn: Alice Brown
 sn: Brown
 givenName: Alice
 displayName: Alice Brown
-mail: alice.brown@cmh.org
+mail: alice.brown@example.com
 sAMAccountName: alicebrown
 userPassword: Password123
