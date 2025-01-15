@@ -7,24 +7,3 @@ ou: itdep
 dn: ou=datacenter,ou=itdep,dc=example,dc=com
 objectClass: organizationalUnit
 ou: datacenter
-
-# Define group G-Access
-dn: cn=G-Access,ou=datacenter,ou=itdep,dc=example,dc=com
-objectClass: groupOfUniqueNames
-cn: G-Access
-description: Access group
-uniqueMember: cn=John Doe,ou=datacenter,ou=itdep,dc=example,dc=com
-
-# Define group G-Discovery
-dn: cn=G-Discovery,ou=datacenter,ou=itdep,dc=example,dc=com
-objectClass: groupOfUniqueNames
-cn: G-Discovery
-description: Discovery group
-uniqueMember: cn=Jane Smith,ou=datacenter,ou=itdep,dc=example,dc=com
-
-# Define group G-Analytic
-dn: cn=G-Analytic,ou=datacenter,ou=itdep,dc=example,dc=com
-objectClass: groupOfUniqueNames
-cn: G-Analytic
-description: Analytic group
-uniqueMember: cn=Alice Brown,ou=datacenter,ou=itdep,dc=example,dc=com

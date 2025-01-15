@@ -1,0 +1,21 @@
+
+# Define group T-Access
+dn: cn=T-Access,ou=datacenter,ou=itdep,dc=example,dc=com
+objectClass: groupOfNames
+cn: T-Access
+description: Access group
+member: cn=John Doe,ou=datacenter,ou=itdep,dc=example,dc=com
+
+# Define group T-Discovery
+dn: cn=T-Discovery,ou=datacenter,ou=itdep,dc=example,dc=com
+objectClass: groupOfNames
+cn: T-Discovery
+description: Discovery group
+member: cn=Jane Smith,ou=datacenter,ou=itdep,dc=example,dc=com
+
+# Define group T-Analytic
+dn: cn=T-Analytic,ou=datacenter,ou=itdep,dc=example,dc=com
+objectClass: groupOfNames
+cn: T-Analytic
+description: Analytic group
+member: cn=Alice Brown,ou=datacenter,ou=itdep,dc=example,dc=com
