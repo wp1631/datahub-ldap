@@ -1,0 +1,83 @@
+## Base DN for the organization
+#dn: dc=example,dc=com
+#objectClass: top
+#objectClass: domain
+#dc: example
+#description: Base domain for Example Inc.
+
+# Organizational Unit for people
+dn: ou=People,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: People
+description: Organizational Unit for People
+
+# Organizational Unit for groups
+dn: ou=Groups,dc=example,dc=com
+objectClass: top
+objectClass: organizationalUnit
+ou: Groups
+description: Organizational Unit for Groups
+
+# User 1
+dn: uid=jdoe,ou=People,dc=example,dc=com
+objectClass: inetOrgPerson
+cn: John Doe
+sn: Doe
+uid: jdoe
+mail: jdoe@example.com
+userPassword: password123
+givenName: John
+displayName: John Doe
+description: Demo user John Doe
+
+# User 2
+dn: uid=asmith,ou=People,dc=example,dc=com
+objectClass: inetOrgPerson
+cn: Alice Smith
+sn: Smith
+uid: asmith
+mail: asmith@example.com
+userPassword: password123
+givenName: Alice
+displayName: Alice Smith
+description: Demo user Alice Smith
+
+# User 3
+dn: uid=mbrown,ou=People,dc=example,dc=com
+objectClass: inetOrgPerson
+cn: Michael Brown
+sn: Brown
+uid: mbrown
+mail: mbrown@example.com
+userPassword: password123
+givenName: Michael
+displayName: Michael Brown
+description: Demo user Michael Brown
+
+# Group 1
+dn: cn=Admins,ou=Groups,dc=example,dc=com
+objectClass: top
+objectClass: groupOfNames
+cn: Admins
+member: uid=jdoe,ou=People,dc=example,dc=com
+member: uid=asmith,ou=People,dc=example,dc=com
+description: Admin group for managing the system
+
+# Group 2
+dn: cn=Developers,ou=Groups,dc=example,dc=com
+objectClass: top
+objectClass: groupOfNames
+cn: Developers
+member: uid=mbrown,ou=People,dc=example,dc=com
+member: uid=asmith,ou=People,dc=example,dc=com
+description: Developers group for coding and testing
+
+# Group 3
+dn: cn=Viewers,ou=Groups,dc=example,dc=com
+objectClass: top
+objectClass: groupOfNames
+cn: Viewers
+member: uid=jdoe,ou=People,dc=example,dc=com
+member: uid=mbrown,ou=People,dc=example,dc=com
+description: Viewers group for read-only access
